@@ -1,0 +1,19 @@
+<%layout( "layouts/boilerplate.ejs" )%>
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <div class="user">
+        <%for(let i=0;i<answers.length;i++){%>
+            <div class="card">
+                <h3>
+                    User : <strong><i>
+                            <%=name%>
+                        </i></strong>
+                </h3>
+                <p>
+                    <%=answers[i]%>
+                </p>
+                <h4>Created At <%=created[i]%>
+                </h4>
+            </div>
+            <%}%>
+    </div>

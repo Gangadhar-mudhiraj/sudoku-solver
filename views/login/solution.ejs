@@ -1,0 +1,29 @@
+<%layout( "layouts/boilerplate.ejs" )%>
+    <link rel="stylesheet" href="/css/box.css">
+    <link rel="stylesheet" href="/css/solution.css">
+    <div class="solution">
+        <h1>Sudoku Solution</h1>
+        <%- include("../includes/box.ejs")%>
+            <p>
+                <%=solution%>
+            </p>
+    </div>
+    <script src="/js/solution.js"></script>
+    <script>
+        execute();
+        function execute() {
+            let s = document.querySelector("p").innerText;
+            let inp = document.querySelectorAll("input");
+            let str = "";
+            for (let idx = 0; idx < s.length; idx++) {
+                if (s.charAt(idx) != ',' && s.charAt(idx) != ' ') {
+                    str += s.charAt(idx);
+                }
+            }
+            let pos = 1;
+            for (x of inp) {
+                x.value = str.charAt(pos);
+                pos++
+            }
+        }
+    </script>

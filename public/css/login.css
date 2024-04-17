@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: aqua;
+  font-size: 20px;
+  font-family: "Cedarville Cursive", cursive;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1517582082532-16a092d47074?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center ;
+  justify-content: space-between ; */
+  background-color: #030303;
+}
+form {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 70vh;
+  width: 90vw;
+  border: 2px solid rgb(248, 248, 248);
+  border-radius: 40px;
+  box-sizing: border-box;
+  /* position: relative ;
+  margin-top: 50% ;
+  margin-left: 50% ;
+  transform: translate(-50%, -50%) ; */
+  margin-top: 150px;
+  background-color: hsla(0, 0%, 10%, 0.25);
+}
+h1 {
+  font-size: 200%;
+  text-align: center;
+  padding-top: 50px;
+  height: 0px;
+}
+.info {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 90%;
+  height: 5rem;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20x;
+  justify-content: center;
+  color: rgb(13, 105, 75);
+}
+.info:hover {
+  width: 92%;
+  height: 5.2rem;
+  background-color: rgb(233, 225, 225, 0.1);
+}
+input {
+  appearance: none;
+  height: 45px;
+  width: 85%;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 45vw;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    margin-top: 10px;
+  }
+}
+input:hover {
+  border-bottom: 2px solid white;
+}
+label {
+  padding: 20px;
+}
+button {
+  margin-top: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  height: 2.5rem;
+  width: 9rem;
+  border-radius: 15px;
+}
+button:hover {
+  opacity: 0.8;
+  background-color: #ffffff15;
+}
